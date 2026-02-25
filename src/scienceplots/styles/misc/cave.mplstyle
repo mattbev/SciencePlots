@@ -12,8 +12,7 @@ text.latex.preamble : \usepackage{amsmath}\usepackage{amssymb}\usepackage{DejaVu
 # Set color cycle
 # Set line style as well for black and white graphs
 # Colors: [blue, red, pale yellow, orange]
-axes.prop_cycle : (cycler('color', ['039DD3', 'C00000', 'FFFE99', 'F6931B']) + cycler('ls', ['-', '--', ':', '-.']))
-
+axes.prop_cycle : cycler('linestyle', ['-', '--', ':', '-.']) * cycler('color', ['039DD3', 'C00000', 'FFFE99', 'F6931B'])
 
 # Change colors
 savefig.facecolor : 0.1098039216   # 28/255
