@@ -1,0 +1,21 @@
+# CAVE Lab Powerpoint template style
+
+# Prefer Verdana; fall back to DejaVu Sans
+font.family : sans-serif
+font.sans-serif : Verdana, DejaVu Sans, Arial, Liberation Sans
+mathtext.fontset : dejavusans
+
+# Use LaTeX for math formatting
+text.usetex : True
+text.latex.preamble : \usepackage{amsmath}\usepackage{amssymb}\usepackage{DejaVuSans}\renewcommand*\familydefault{\sfdefault}\usepackage[basic,italic,defaultimath,nohbar,defaultmathsizes]{mathastext}\Mathastext
+
+# Change colors
+savefig.facecolor : 0.1098039216   # 28/255
+figure.facecolor : 0.1098039216   # 28/255
+figure.edgecolor : 0.1098039216   # 28/255
+axes.facecolor : 0.1098039216   # 28/255
+axes.edgecolor : white
+axes.labelcolor : white
+text.color : white
+xtick.color : white
+ytick.color : white

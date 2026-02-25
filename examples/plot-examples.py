@@ -74,6 +74,18 @@ with plt.style.context(["science", "ieee", "std-colors"]):
     ax.set(**pparam)
     fig.savefig("figures/fig02b.jpg", dpi=300)
     plt.close()
+    
+# %%
+# Styles 'science', 'ieee', 'cave'
+with plt.style.context(["science", "ieee", "cave"]):
+    fig, ax = plt.subplots()
+    for p in [10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title="Order")
+    ax.autoscale(tight=True)
+    ax.set(**pparam)
+    fig.savefig("figures/fig02b_cave.jpg", dpi=300)
+    plt.close()
 
 # %%
 # Styles 'science', 'nature'
